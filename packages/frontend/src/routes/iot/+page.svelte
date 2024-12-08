@@ -149,12 +149,11 @@
 	onDestroy(() => {});
 
 	let mapComponent;
-	console.log('mapComponent:', mapComponent);
 	let vizComponent;
 
 	function clearMap() {
 		if (mapComponent) {
-			mapComponent.clearVectorSource();
+			mapComponent.clearMap();
 		}
 	}
 	function clearViz() {
@@ -273,9 +272,7 @@
 		</form>
 	</div>
 	<div class="right-top-container">
-		<div id="map" class="map">
-			<Map bind:this={mapComponent} on:click={setCoordinates} />
-		</div>
+		<Map />
 	</div>
 	{#if $messages.length > 0}
 		<div class="left-bottom-container">

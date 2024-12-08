@@ -28,6 +28,7 @@
 	"dependencies": {
 		"@aws-sdk/client-iot-data-plane": "^3.665.0",
 		"@aws-sdk/client-kinesis": "^3.665.0",
+		"maplibre-gl": "^4.7.1",
 		"mqtt": "^5.10.1",
 		"sst": "3.2.73"
 	}
